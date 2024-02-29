@@ -44,6 +44,6 @@ class Database:
         self.conn.commit()
 
     def delete(self, note_id):
-        # Exercício 03
+        # Exercício 06
         self.conn.execute("DELETE FROM note WHERE id = ?;", (note_id,))
         self.conn.commit()
