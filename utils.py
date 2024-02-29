@@ -1,19 +1,3 @@
-'''def extract_route(req):
-    cont = 0
-    lista = []
-    sembarra = ""
-    lista = req.split("\n")
-    lista[0] = lista[0].replace("GET ","")
-    lista[0] = lista[0].replace("POST ","")
-    lista[0] = lista[0].replace("DELETE ","")
-    lista[0] = lista[0].replace(" HTTP/1.1","")
-    for i in range(len(lista[0])):
-        if lista[0][i] == "/" and cont!=1:
-            cont = 1
-        else:
-            sembarra = sembarra + lista[0][i]
-    return(sembarra)'''
-
 def extract_route(req):
     #nao entendi o fatiamento, dar prints para entender!!!!!!!!!!!!!!!!
     return req.split()[1][1:] #a posicao 1 é a rota, estamos fazendo split com um espaço
