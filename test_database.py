@@ -41,7 +41,7 @@ def initial_setup(exercício):
 
         return clazz
     return decorate
-# teste
+
 
 class DatabaseTestCase(unittest.TestCase):
     def setUp(self):
